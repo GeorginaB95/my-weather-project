@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather 🛫 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e9a3f79448.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container-one">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 id="current-date">
+                        Sunday 14th February 2021
+                    </h2>
+                    <h2 id="current-time">
+                        12:05pm
+                    </h2>
+                </div>
+                <div class="col-sm-4">
+                    <form id="search-form">
+                        <input type="search" placeholder="Change Town / City" id="search-text-input" />
+                        <input type="submit" value="Search 🔎" id="search-button" />
+                    </form>
+                    <button id="current-location-button">Current Location</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-two">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="city">
+                        London
+                    </div>
+                    <span class="temperature" id="temperature">
+                        <span id="tempNumber">
+                            2
+                        </span>
+                        °C
+                </div>
+                <div class="col-sm-4 weather-emoji">
+                    🌨
+                </div>
+                <div class="col-sm-4 weather-info">
+                    <ul>
+                        <li>
+                            Humidity: 75%
+                        </li>
+                        <li>
+                            Chance of Rain: 90%
+                        </li>
+                        <li>
+                            Chance of Snow: 90%
+                        </li>
+                        <li>
+                            Wind Speed: 6mph
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="phrase">
+                    Do you want to build a Snowman? ☃
+                </h3>
+                <div class="container-three">
+                    <div class="row row-col-5">
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mon</h5>
+                                    <p class="card-text">⛈</p>
+                                    <h5 class="card-temperature">5˚C</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tues</h5>
+                                    <p class="card-text">🌦</p>
+                                    <h5 class="card-temperature">8˚C</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wed</h5>
+                                    <p class="card-text">☁︎</p>
+                                    <h5 class="card-temperature">8˚C</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thurs</h5>
+                                    <p class="card-text">☀️</p>
+                                    <h5 class="card-temperature">11˚C</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fri</h5>
+                                    <p class="card-text">⛅️</p>
+                                    <h5 class="card-temperature">10˚C</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="src/script.js"></script>
+</body>
+
+</html>
