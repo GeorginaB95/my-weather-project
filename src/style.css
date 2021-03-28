@@ -96,3 +96,7 @@ ul {
 .card-temperature {
   color: #3da4ab;
 }
+footer {
+  display: block;
+  text-align: center;
+}
